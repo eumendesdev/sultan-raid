@@ -21,7 +21,19 @@ O prefixo padrão é `v!`.
 | :--- | :--- | :--- | :--- |
 | **`sultan`** | Cria um número configurável de canais de texto e os inunda com uma mensagem de spam. | `v!sultan` | `v!sultan <ID_DO_SERVIDOR>` |
 | **`banall`** | Bane todos os membros do servidor (exceto o dono, o operador e o bot). | `v!banall` | `v!banall <ID_DO_SERVIDOR>` |
-| **`nuke`** | Deleta todos os canais e cargos e cria um único canal de texto. | `v!nuke` | `v!nuke <ID_DO_SERVIDOR>` |
+| **`kickall`**| Expulsa todos os membros possíveis do servidor. | `v!kickall` | `v!kickall <ID_DO_SERVIDOR>` |
+| **`nuke`** | Deleta canais, cargos, emojis e cria um canal. | `v!nuke` | `v!nuke <ID_DO_SERVIDOR>` |
+| **`renameall`**| Renomeia todos os membros para um nome específico. | `v!renameall [novo_nome]` | `v!renameall <ID_DO_SERVIDOR> [novo_nome]` |
+| **`dmall`**| Envia uma mensagem privada para todos os membros do servidor. | `v!dmall <mensagem>` | `v!dmall <ID_DO_SERVIDOR> <mensagem>` |
+| **`spamroles`**| Cria uma quantidade massiva de cargos. | `v!spamroles <qtd> [nome]` | *Não aplicável* |
+| **`serveredit`**| Altera o nome do servidor. | `v!serveredit <novo_nome>` | `v!serveredit <ID> <novo_nome>` |
+| **`renamechannels`**| Renomeia todos os canais do servidor. | `v!renamechannels [novo_nome]` | `v!renamechannels <ID> [novo_nome]` |
+| **`giveroleall`**| Cria um cargo e o dá para todos. | `v!giveroleall [nome_cargo]` | `v!giveroleall <ID> [nome_cargo]` |
+| **`stripallroles`**| Remove todos os cargos de todos os membros. | `v!stripallroles` | `v!stripallroles <ID_DO_SERVIDOR>` |
+| **`serverlist`**| Lista todos os servidores onde o bot está. | *Apenas DM* | `v!serverlist` |
+| **`help`**| Mostra a lista de comandos. | *Apenas DM* | `v!help` |
+| **`nukebot`**| Faz o bot sair de todos os servidores. | *Apenas DM* | `v!nukebot` |
+| **`cleandm`**| Limpa as DMs que o bot te enviou. | *Apenas DM* | `v!cleandm` |
 
 ---
 
@@ -70,7 +82,7 @@ Abra o arquivo `config.json` e preencha os seguintes campos:
    - `SERVER MEMBERS INTENT`
    - `MESSAGE CONTENT INTENT`
 
-   ![Intents](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKTUMGYFSC7rRUYNMrHwVGclHYLNVDI-m0A&s)
+   ![Intents](https://i.imgur.com/K0V36P1.png)
 
 ### 5. Convide o Bot para o Servidor
 1. Na aba **"OAuth2 > URL Generator"**, selecione as scopes `bot` e `applications.commands`.
@@ -91,4 +103,3 @@ O terminal exibirá uma mensagem confirmando que o bot está online e pronto par
 ## ⚠️ Aviso
 
 O uso de bots de raid é contra os Termos de Serviço do Discord e pode resultar no banimento da sua conta e da aplicação do bot. Este projeto foi desenvolvido para fins educacionais. Use por sua conta e risco.
-
