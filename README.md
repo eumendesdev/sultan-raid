@@ -70,7 +70,7 @@ Abra o arquivo `config.json` e preencha os seguintes campos:
    - `SERVER MEMBERS INTENT`
    - `MESSAGE CONTENT INTENT`
 
-   ![Intents](https://i.imgur.com/K0V36P1.png)
+   ![Intents](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKTUMGYFSC7rRUYNMrHwVGclHYLNVDI-m0A&s)
 
 ### 5. Convide o Bot para o Servidor
 1. Na aba **"OAuth2 > URL Generator"**, selecione as scopes `bot` e `applications.commands`.
@@ -91,3 +91,4 @@ O terminal exibirá uma mensagem confirmando que o bot está online e pronto par
 ## ⚠️ Aviso
 
 O uso de bots de raid é contra os Termos de Serviço do Discord e pode resultar no banimento da sua conta e da aplicação do bot. Este projeto foi desenvolvido para fins educacionais. Use por sua conta e risco.
+
