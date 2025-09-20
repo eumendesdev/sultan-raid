@@ -2,7 +2,8 @@
     "token": "SEU_TOKEN_AQUI",
     "prefix": "v!",
     "perms": ["SEU_ID_AQUI", "ID2", "ID3"],
-    "channel_name": "returnstock",
-    "message_content": "@here @everyone\n.gg/returnstock",
+    "channel_name": "nome-canal",
+    "message_content": "@here @everyone\n.gg/url-seu-server",
     "num_channels": 50
 }
+
