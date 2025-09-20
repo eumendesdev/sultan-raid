@@ -1,0 +1,5 @@
+{
+    "token": "SEU_TOKEN_AQUI",
+    "prefix": "v!",
+    "perms": ["SEU_ID_AQUI", "ID2", "ID3"]
+}
