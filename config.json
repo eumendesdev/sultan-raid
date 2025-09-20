@@ -1,5 +1,8 @@
 {
     "token": "SEU_TOKEN_AQUI",
     "prefix": "v!",
-    "perms": ["SEU_ID_AQUI", "ID2", "ID3"]
+    "perms": ["SEU_ID_AQUI", "ID2", "ID3"],
+    "channel_name": "returnstock",
+    "message_content": "@here @everyone\n.gg/returnstock",
+    "num_channels": 50
 }

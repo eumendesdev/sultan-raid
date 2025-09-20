@@ -19,7 +19,7 @@ O prefixo padrão é `v!`.
 
 | Comando | Ação | Uso no Servidor | Uso na DM |
 | :--- | :--- | :--- | :--- |
-| **`sultan`** | Cria 50 canais de texto e os inunda com mensagens de spam. | `v!sultan` | `v!sultan <ID_DO_SERVIDOR>` |
+| **`sultan`** | Cria um número configurável de canais de texto e os inunda com uma mensagem de spam. | `v!sultan` | `v!sultan <ID_DO_SERVIDOR>` |
 | **`banall`** | Bane todos os membros do servidor (exceto o dono, o operador e o bot). | `v!banall` | `v!banall <ID_DO_SERVIDOR>` |
 | **`nuke`** | Deleta todos os canais e cargos e cria um único canal de texto. | `v!nuke` | `v!nuke <ID_DO_SERVIDOR>` |
 
@@ -45,13 +45,19 @@ Abra o arquivo `config.json` e preencha os seguintes campos:
 - `"token"`: O token secreto do seu bot. **Nunca compartilhe este token!**
 - `"prefix"`: O prefixo que o bot usará para os comandos (ex: `v!`).
 - `"perms"`: Uma lista de IDs de usuários do Discord que terão permissão para usar o bot.
+- `"channel_name"`: O nome padrão para os canais criados pelo comando `sultan`.
+- `"message_content"`: A mensagem que será enviada repetidamente nos canais criados.
+- `"num_channels"`: O número de canais a serem criados pelo comando `sultan`.
 
 **Exemplo de `config.json`:**
 ```json
 {
     "token": "SEU_TOKEN_SUPER_SECRETO_AQUI",
     "prefix": "v!",
-    "perms": ["SEU_ID_DE_USUARIO_AQUI", "ID_DE_OUTRO_USUARIO_AUTORIZADO"]
+    "perms": ["SEU_ID_DE_USUARIO_AQUI", "ID_DE_OUTRO_USUARIO_AUTORIZADO"],
+    "channel_name": "nome-canal",
+    "message_content": "@here @everyone\n.gg/url-server",
+    "num_channels": 50
 }
 ```
 > Para obter um ID de usuário, ative o Modo Desenvolvedor no Discord (`Configurações > Avançado`), clique com o botão direito no perfil de um usuário e selecione "Copiar ID do Usuário".
